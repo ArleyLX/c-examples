@@ -4,6 +4,7 @@
 int main() {
 
     int v;
+    int res_f5;
 
     // Llama a las 3 funciones
     funcion1();
@@ -12,6 +13,10 @@ int main() {
 
     // Imprime el valor que retornó funcion3()
     printf("v = %d\n", v);
+
+    // funcion 5
+    res_f5=funcion5(6);
+    printf("funcion 5=%d",res_f5);
 
     return 0;
 
@@ -33,5 +38,10 @@ void funcion2(int a, float b) {
 int funcion3(int x) {
     printf("En funcion3()...\n");
     int y = x + 2;
+    return y;
+}
+int funcion5(int x) {
+    printf("En funcion3()...\n");
+    int y = x + 4;
     return y;
 }
